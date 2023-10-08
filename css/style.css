@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.navbar .nav-link:hover {
+    color: rgb(183, 183, 183);
+}
+
 .nav-item {
     padding-right: 1.2rem;
+}
+
+.carousel-item,
+.carousel-item img {
+    height: 580px;
+    width: 100%;
+}
+
+.welcometitle {
+    font-family: "Libre Baskerville";
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .carousel-item,
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .carousel-item,
+    .carousel-item img {
+        height: 310px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .welcome .card {
+        margin-bottom: 1.5rem;
+    }
 }

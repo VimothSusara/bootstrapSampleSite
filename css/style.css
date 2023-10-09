@@ -15,8 +15,16 @@
 }
 
 .welcometitle {
-    font-family: "Libre Baskerville";
+    font-family: "autour one";
 }
+
+.readmorelink {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(73, 73, 73);
+
+}
+
 
 
 
@@ -36,6 +44,14 @@
     .carousel-item,
     .carousel-item img {
         height: 310px;
+    }
+
+    .imagecollection img {
+        margin-bottom: 2rem;
+    }
+
+    .videosection iframe {
+        margin-top: 1.5rem;
     }
 }
 

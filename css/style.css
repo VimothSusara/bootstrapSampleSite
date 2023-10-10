@@ -31,6 +31,16 @@
     font-weight: 400
 }
 
+.footersection ul li {
+    list-style-type: none;
+}
+
+.footersection ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
 
 
 

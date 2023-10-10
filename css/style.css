@@ -22,7 +22,6 @@
     text-decoration: none;
     font-size: 1.2rem;
     color: rgb(73, 73, 73);
-
 }
 
 
@@ -53,6 +52,8 @@
     .videosection iframe {
         margin-top: 1.5rem;
     }
+
+    /* .videosection .readmorelink {} */
 }
 
 @media only screen and (max-width: 991px) {

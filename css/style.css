@@ -21,9 +21,14 @@
 .readmorelink {
     text-decoration: none;
     font-size: 1.2rem;
-    color: rgb(73, 73, 73);
+    color: rgb(97, 97, 97);
+    transition: .3s ease-in-out;
 }
 
+.readmorelink:hover {
+    color: black;
+    font-size: 1.3rem;
+}
 
 
 

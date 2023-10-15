@@ -33,10 +33,16 @@
 
 .placessection ul li {
     list-style-type: none;
+    margin-bottom: .8rem;
 }
 
 .placessection ul li a {
     text-decoration: none;
+}
+
+.placescontent img {
+    height: 450px;
+    width: 100%;
 }
 
 .footersection ul li {
@@ -96,6 +102,30 @@
     }
 
     /* .videosection .readmorelink {} */
+    /* .placessection .placescontent .container-fluid {
+        text-align: center;
+    } */
+
+    .placescontent img {
+        height: 180px;
+        width: 100%;
+    }
+
+    #topBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 40px;
+        cursor: pointer;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        font-size: .9rem;
+        border-radius: 4rem;
+        padding: .8rem;
+    }
 }
 
 @media only screen and (max-width: 991px) {

@@ -31,6 +31,14 @@
     font-weight: 400
 }
 
+.placessection ul li {
+    list-style-type: none;
+}
+
+.placessection ul li a {
+    text-decoration: none;
+}
+
 .footersection ul li {
     list-style-type: none;
 }
@@ -40,7 +48,25 @@
     color: white;
 }
 
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 4rem;
+    padding: 1rem;
+}
 
+#topBtn:hover {
+    background-color: rgb(40, 40, 40);
+}
 
 
 

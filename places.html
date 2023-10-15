@@ -18,7 +18,7 @@
         class="navbar navbar-expand-lg bg-body-tertiary shadow"
         style="box-shadow: 1px 1px 12px rgb(104, 104, 104)"
       >
-        <div class="container">
+        <div class="container w-100">
           <a class="navbar-brand" href="index.html"
             ><img
               src="images/SLTravellogo1.png"
@@ -53,9 +53,7 @@
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light bg-dark rounded-2" href="#"
-                  >Contact Us</a
-                >
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -68,7 +66,12 @@
     <section class="placessection container-fluid" style="margin-top: 3rem">
       <div class="row">
         <div class="col-1 d-block d-md-none">
-          <button class="border-0 bg-light pr-4 position-fixed mt-5">
+          <button
+            class="border-0 bg-light pr-4 position-fixed mt-5"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
             <img
               src="images/icons8-arrow-50.png"
               alt=""
@@ -76,24 +79,132 @@
               style="height: 35px; width: 30px"
             />
           </button>
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+            style="width: 50%"
+          >
+            <div class="offcanvas-body">
+              <div id="list-example" class="list-group">
+                <a
+                  class="list-group-item list-group-item-action border-0"
+                  href="#colombo"
+                  >Colombo</a
+                >
+                <a
+                  class="list-group-item list-group-item-action border-0"
+                  href="#kandy"
+                  >Kandy</a
+                >
+                <a
+                  class="list-group-item list-group-item-action border-0"
+                  href="#nuwaraeliya"
+                  >Nuwara-Eliya</a
+                >
+                <a
+                  class="list-group-item list-group-item-action border-0"
+                  href="#ella"
+                  >Ella</a
+                >
+                <a
+                  class="list-group-item list-group-item-action border-0"
+                  href="#bentota"
+                  >Bentota</a
+                >
+                <a
+                  class="list-group-item list-group-item-action border-0"
+                  href="#pinnawala"
+                  >Pinnawala</a
+                >
+                <a
+                  class="list-group-item list-group-item-action border-0"
+                  href="#yala"
+                  >Yala National Park</a
+                >
+                <a
+                  class="list-group-item list-group-item-action border-0"
+                  href="#sigiriya"
+                  >Sigiriya</a
+                >
+                <a
+                  class="list-group-item list-group-item-action border-0"
+                  href="#adamsrock"
+                  >Adams Rock</a
+                >
+                <a
+                  class="list-group-item list-group-item-action border-0"
+                  href="#anuradhapura"
+                  >Anuradhapura</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="col-2 mt-3 d-none d-md-block">
-          <ul>
-            <li><a href="#">Colombo</a></li>
-            <li><a href="#kandy">Kandy</a></li>
-            <li><a href="#nuwaraeliya">Nuwara Eliya</a></li>
-            <li><a href="#ella">Ella</a></li>
-            <li><a href="#bentota">Bentota</a></li>
-            <li><a href="#pinnawala">Pinnawala Elephant Orphanage</a></li>
-            <li><a href="#yala">Yala National Park</a></li>
-            <li><a href="#sigiriya">Sigiriya</a></li>
-            <li><a href="#adamsrock">Adams Rock</a></li>
-            <li><a href="#anuradhapura">Anuradhapura</a></li>
-          </ul>
+          <div id="list-example" class="list-group position-fixed">
+            <a
+              class="list-group-item list-group-item-action border-0"
+              href="#colombo"
+              >Colombo</a
+            >
+            <a
+              class="list-group-item list-group-item-action border-0"
+              href="#kandy"
+              >Kandy</a
+            >
+            <a
+              class="list-group-item list-group-item-action border-0"
+              href="#nuwaraeliya"
+              >Nuwara-Eliya</a
+            >
+            <a
+              class="list-group-item list-group-item-action border-0"
+              href="#ella"
+              >Ella</a
+            >
+            <a
+              class="list-group-item list-group-item-action border-0"
+              href="#bentota"
+              >Bentota</a
+            >
+            <a
+              class="list-group-item list-group-item-action border-0"
+              href="#pinnawala"
+              >Pinnawala</a
+            >
+            <a
+              class="list-group-item list-group-item-action border-0"
+              href="#yala"
+              >Yala National Park</a
+            >
+            <a
+              class="list-group-item list-group-item-action border-0"
+              href="#sigiriya"
+              >Sigiriya</a
+            >
+            <a
+              class="list-group-item list-group-item-action border-0"
+              href="#adamsrock"
+              >Adams Rock</a
+            >
+            <a
+              class="list-group-item list-group-item-action border-0"
+              href="#anuradhapura"
+              >Anuradhapura</a
+            >
+          </div>
         </div>
         <div class="placescontent col-10">
-          <div class="container-fluid">
+          <!-- overflow-auto -->
+          <div
+            class="container-fluid"
+            data-bs-target="#list-example"
+            style="max-height: 490px"
+          >
             <h1 id="colombo"><span>1.</span>Colombo</h1>
             <div class="container text-center">
               <img
@@ -104,20 +215,25 @@
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem assumenda accusantium explicabo iusto eveniet neque
-              nulla aliquam. Illo reiciendis consequuntur in sit blanditiis modi
-              ipsum. Et atque asperiores qui minima est aperiam consequuntur
-              iusto earum, voluptatibus odio quas beatae. Reprehenderit
-              molestias sunt blanditiis porro ipsum voluptatum quisquam deleniti
-              impedit excepturi.<br />
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
-              incidunt sunt ad iste inventore reprehenderit adipisci illum,
-              provident dicta atque velit cumque nam minima perferendis non
-              dolorem. Illo minus aspernatur exercitationem dicta?
-              Necessitatibus unde ut laboriosam repudiandae laborum. Quis
-              incidunt aspernatur ipsam nobis odit, praesentium ea error
-              quisquam atque autem.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              quibusdam, ea culpa, quam eum consequuntur iusto est maxime
+              voluptate odit non. Assumenda ullam cupiditate quis officia
+              tempore, quod reprehenderit inventore, explicabo provident
+              quibusdam expedita ad dignissimos fuga minima in eum ipsum
+              debitis? Vitae voluptatem ab illum culpa mollitia accusantium
+              sequi nemo perferendis earum eveniet suscipit accusamus, vero
+              corrupti? Aliquam veniam, ipsa temporibus, asperiores tenetur
+              ipsam autem voluptatem optio voluptatum reprehenderit numquam
+              mollitia magni fugiat deleniti modi commodi error. Reiciendis
+              similique laudantium id quod! Aliquid nesciunt quae fugit eaque
+              voluptas beatae quia cumque ut vel. Sint aliquam sed amet vel
+              temporibus eaque voluptates aperiam molestias rem deleniti,
+              aliquid omnis mollitia possimus voluptatem distinctio ipsam
+              voluptatum earum atque. Asperiores, vel quasi quae quaerat
+              voluptatibus ex illum quis officia eligendi similique? Distinctio
+              accusamus ut nostrum deleniti nisi laborum. Quam amet nisi hic
+              fuga tenetur aspernatur accusantium, quas facere aliquam culpa
+              nostrum, veritatis iusto.
             </p>
             <h1 id="kandy"><span>2.</span>Kandy</h1>
             <div class="container text-center">
@@ -125,13 +241,24 @@
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem assumenda accusantium explicabo iusto eveniet neque
-              nulla aliquam. Illo reiciendis consequuntur in sit blanditiis modi
-              ipsum. Et atque asperiores qui minima est aperiam consequuntur
-              iusto earum, voluptatibus odio quas beatae. Reprehenderit
-              molestias sunt blanditiis porro ipsum voluptatum quisquam deleniti
-              impedit excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              vitae aliquid tenetur natus velit fugit tempore incidunt! Placeat,
+              nesciunt, accusantium nisi velit ad id alias dolore, repellat qui
+              ut pariatur corrupti aspernatur nulla. Praesentium aut incidunt
+              quia quisquam ullam vero maiores! Quisquam ipsa sed fuga a. Itaque
+              tempora reiciendis, soluta minus repellat pariatur optio iusto.
+              Quos, consequuntur. Perferendis natus possimus sunt sapiente, ut
+              quis, minima ullam nihil velit, totam voluptatem aut accusantium
+              repudiandae rem soluta recusandae labore harum necessitatibus quam
+              eius laborum in deleniti? Perferendis deserunt consectetur aliquam
+              maiores tempora modi maxime a voluptate mollitia, nulla odit
+              temporibus totam eveniet adipisci ullam ipsam eius fugit in hic
+              corrupti provident. Expedita, saepe dolore provident itaque
+              numquam fugit beatae asperiores maiores hic cumque neque
+              excepturi. Maiores quisquam soluta itaque molestiae nihil expedita
+              velit magni enim deleniti quas? Magni natus debitis voluptatibus
+              eligendi minima vero soluta est, reiciendis inventore ipsam
+              temporibus aspernatur quaerat.
             </p>
             <h1 id="nuwaraeliya"><span>3.</span>Nuwara Eliya</h1>
             <div class="container text-center">
@@ -143,13 +270,24 @@
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem assumenda accusantium explicabo iusto eveniet neque
-              nulla aliquam. Illo reiciendis consequuntur in sit blanditiis modi
-              ipsum. Et atque asperiores qui minima est aperiam consequuntur
-              iusto earum, voluptatibus odio quas beatae. Reprehenderit
-              molestias sunt blanditiis porro ipsum voluptatum quisquam deleniti
-              impedit excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              vitae aliquid tenetur natus velit fugit tempore incidunt! Placeat,
+              nesciunt, accusantium nisi velit ad id alias dolore, repellat qui
+              ut pariatur corrupti aspernatur nulla. Praesentium aut incidunt
+              quia quisquam ullam vero maiores! Quisquam ipsa sed fuga a. Itaque
+              tempora reiciendis, soluta minus repellat pariatur optio iusto.
+              Quos, consequuntur. Perferendis natus possimus sunt sapiente, ut
+              quis, minima ullam nihil velit, totam voluptatem aut accusantium
+              repudiandae rem soluta recusandae labore harum necessitatibus quam
+              eius laborum in deleniti? Perferendis deserunt consectetur aliquam
+              maiores tempora modi maxime a voluptate mollitia, nulla odit
+              temporibus totam eveniet adipisci ullam ipsam eius fugit in hic
+              corrupti provident. Expedita, saepe dolore provident itaque
+              numquam fugit beatae asperiores maiores hic cumque neque
+              excepturi. Maiores quisquam soluta itaque molestiae nihil expedita
+              velit magni enim deleniti quas? Magni natus debitis voluptatibus
+              eligendi minima vero soluta est, reiciendis inventore ipsam
+              temporibus aspernatur quaerat.
             </p>
             <h1 id="ella"><span>4.</span>Ella</h1>
             <div class="container text-center">
@@ -157,13 +295,24 @@
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem assumenda accusantium explicabo iusto eveniet neque
-              nulla aliquam. Illo reiciendis consequuntur in sit blanditiis modi
-              ipsum. Et atque asperiores qui minima est aperiam consequuntur
-              iusto earum, voluptatibus odio quas beatae. Reprehenderit
-              molestias sunt blanditiis porro ipsum voluptatum quisquam deleniti
-              impedit excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              vitae aliquid tenetur natus velit fugit tempore incidunt! Placeat,
+              nesciunt, accusantium nisi velit ad id alias dolore, repellat qui
+              ut pariatur corrupti aspernatur nulla. Praesentium aut incidunt
+              quia quisquam ullam vero maiores! Quisquam ipsa sed fuga a. Itaque
+              tempora reiciendis, soluta minus repellat pariatur optio iusto.
+              Quos, consequuntur. Perferendis natus possimus sunt sapiente, ut
+              quis, minima ullam nihil velit, totam voluptatem aut accusantium
+              repudiandae rem soluta recusandae labore harum necessitatibus quam
+              eius laborum in deleniti? Perferendis deserunt consectetur aliquam
+              maiores tempora modi maxime a voluptate mollitia, nulla odit
+              temporibus totam eveniet adipisci ullam ipsam eius fugit in hic
+              corrupti provident. Expedita, saepe dolore provident itaque
+              numquam fugit beatae asperiores maiores hic cumque neque
+              excepturi. Maiores quisquam soluta itaque molestiae nihil expedita
+              velit magni enim deleniti quas? Magni natus debitis voluptatibus
+              eligendi minima vero soluta est, reiciendis inventore ipsam
+              temporibus aspernatur quaerat.
             </p>
             <h1 id="bentota"><span>5.</span>Bentota</h1>
             <div class="container text-center">
@@ -175,13 +324,24 @@
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem assumenda accusantium explicabo iusto eveniet neque
-              nulla aliquam. Illo reiciendis consequuntur in sit blanditiis modi
-              ipsum. Et atque asperiores qui minima est aperiam consequuntur
-              iusto earum, voluptatibus odio quas beatae. Reprehenderit
-              molestias sunt blanditiis porro ipsum voluptatum quisquam deleniti
-              impedit excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              vitae aliquid tenetur natus velit fugit tempore incidunt! Placeat,
+              nesciunt, accusantium nisi velit ad id alias dolore, repellat qui
+              ut pariatur corrupti aspernatur nulla. Praesentium aut incidunt
+              quia quisquam ullam vero maiores! Quisquam ipsa sed fuga a. Itaque
+              tempora reiciendis, soluta minus repellat pariatur optio iusto.
+              Quos, consequuntur. Perferendis natus possimus sunt sapiente, ut
+              quis, minima ullam nihil velit, totam voluptatem aut accusantium
+              repudiandae rem soluta recusandae labore harum necessitatibus quam
+              eius laborum in deleniti? Perferendis deserunt consectetur aliquam
+              maiores tempora modi maxime a voluptate mollitia, nulla odit
+              temporibus totam eveniet adipisci ullam ipsam eius fugit in hic
+              corrupti provident. Expedita, saepe dolore provident itaque
+              numquam fugit beatae asperiores maiores hic cumque neque
+              excepturi. Maiores quisquam soluta itaque molestiae nihil expedita
+              velit magni enim deleniti quas? Magni natus debitis voluptatibus
+              eligendi minima vero soluta est, reiciendis inventore ipsam
+              temporibus aspernatur quaerat.
             </p>
             <h1 id="pinnawala"><span>6.</span>Pinnawala Elephant Orphanage</h1>
             <div class="container text-center">
@@ -193,13 +353,24 @@
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem assumenda accusantium explicabo iusto eveniet neque
-              nulla aliquam. Illo reiciendis consequuntur in sit blanditiis modi
-              ipsum. Et atque asperiores qui minima est aperiam consequuntur
-              iusto earum, voluptatibus odio quas beatae. Reprehenderit
-              molestias sunt blanditiis porro ipsum voluptatum quisquam deleniti
-              impedit excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              vitae aliquid tenetur natus velit fugit tempore incidunt! Placeat,
+              nesciunt, accusantium nisi velit ad id alias dolore, repellat qui
+              ut pariatur corrupti aspernatur nulla. Praesentium aut incidunt
+              quia quisquam ullam vero maiores! Quisquam ipsa sed fuga a. Itaque
+              tempora reiciendis, soluta minus repellat pariatur optio iusto.
+              Quos, consequuntur. Perferendis natus possimus sunt sapiente, ut
+              quis, minima ullam nihil velit, totam voluptatem aut accusantium
+              repudiandae rem soluta recusandae labore harum necessitatibus quam
+              eius laborum in deleniti? Perferendis deserunt consectetur aliquam
+              maiores tempora modi maxime a voluptate mollitia, nulla odit
+              temporibus totam eveniet adipisci ullam ipsam eius fugit in hic
+              corrupti provident. Expedita, saepe dolore provident itaque
+              numquam fugit beatae asperiores maiores hic cumque neque
+              excepturi. Maiores quisquam soluta itaque molestiae nihil expedita
+              velit magni enim deleniti quas? Magni natus debitis voluptatibus
+              eligendi minima vero soluta est, reiciendis inventore ipsam
+              temporibus aspernatur quaerat.
             </p>
             <h1 id="yala"><span>7.</span>Yala National Park</h1>
             <div class="container text-center">
@@ -207,13 +378,24 @@
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem assumenda accusantium explicabo iusto eveniet neque
-              nulla aliquam. Illo reiciendis consequuntur in sit blanditiis modi
-              ipsum. Et atque asperiores qui minima est aperiam consequuntur
-              iusto earum, voluptatibus odio quas beatae. Reprehenderit
-              molestias sunt blanditiis porro ipsum voluptatum quisquam deleniti
-              impedit excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              vitae aliquid tenetur natus velit fugit tempore incidunt! Placeat,
+              nesciunt, accusantium nisi velit ad id alias dolore, repellat qui
+              ut pariatur corrupti aspernatur nulla. Praesentium aut incidunt
+              quia quisquam ullam vero maiores! Quisquam ipsa sed fuga a. Itaque
+              tempora reiciendis, soluta minus repellat pariatur optio iusto.
+              Quos, consequuntur. Perferendis natus possimus sunt sapiente, ut
+              quis, minima ullam nihil velit, totam voluptatem aut accusantium
+              repudiandae rem soluta recusandae labore harum necessitatibus quam
+              eius laborum in deleniti? Perferendis deserunt consectetur aliquam
+              maiores tempora modi maxime a voluptate mollitia, nulla odit
+              temporibus totam eveniet adipisci ullam ipsam eius fugit in hic
+              corrupti provident. Expedita, saepe dolore provident itaque
+              numquam fugit beatae asperiores maiores hic cumque neque
+              excepturi. Maiores quisquam soluta itaque molestiae nihil expedita
+              velit magni enim deleniti quas? Magni natus debitis voluptatibus
+              eligendi minima vero soluta est, reiciendis inventore ipsam
+              temporibus aspernatur quaerat.
             </p>
             <h1 id="sigiriya"><span>8.</span>Sigiriya</h1>
             <div class="container text-center">
@@ -225,13 +407,24 @@
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem assumenda accusantium explicabo iusto eveniet neque
-              nulla aliquam. Illo reiciendis consequuntur in sit blanditiis modi
-              ipsum. Et atque asperiores qui minima est aperiam consequuntur
-              iusto earum, voluptatibus odio quas beatae. Reprehenderit
-              molestias sunt blanditiis porro ipsum voluptatum quisquam deleniti
-              impedit excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              vitae aliquid tenetur natus velit fugit tempore incidunt! Placeat,
+              nesciunt, accusantium nisi velit ad id alias dolore, repellat qui
+              ut pariatur corrupti aspernatur nulla. Praesentium aut incidunt
+              quia quisquam ullam vero maiores! Quisquam ipsa sed fuga a. Itaque
+              tempora reiciendis, soluta minus repellat pariatur optio iusto.
+              Quos, consequuntur. Perferendis natus possimus sunt sapiente, ut
+              quis, minima ullam nihil velit, totam voluptatem aut accusantium
+              repudiandae rem soluta recusandae labore harum necessitatibus quam
+              eius laborum in deleniti? Perferendis deserunt consectetur aliquam
+              maiores tempora modi maxime a voluptate mollitia, nulla odit
+              temporibus totam eveniet adipisci ullam ipsam eius fugit in hic
+              corrupti provident. Expedita, saepe dolore provident itaque
+              numquam fugit beatae asperiores maiores hic cumque neque
+              excepturi. Maiores quisquam soluta itaque molestiae nihil expedita
+              velit magni enim deleniti quas? Magni natus debitis voluptatibus
+              eligendi minima vero soluta est, reiciendis inventore ipsam
+              temporibus aspernatur quaerat.
             </p>
             <h1 id="adamsrock"><span>9.</span>Adams Rock</h1>
             <div class="container text-center">
@@ -243,13 +436,24 @@
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem assumenda accusantium explicabo iusto eveniet neque
-              nulla aliquam. Illo reiciendis consequuntur in sit blanditiis modi
-              ipsum. Et atque asperiores qui minima est aperiam consequuntur
-              iusto earum, voluptatibus odio quas beatae. Reprehenderit
-              molestias sunt blanditiis porro ipsum voluptatum quisquam deleniti
-              impedit excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              vitae aliquid tenetur natus velit fugit tempore incidunt! Placeat,
+              nesciunt, accusantium nisi velit ad id alias dolore, repellat qui
+              ut pariatur corrupti aspernatur nulla. Praesentium aut incidunt
+              quia quisquam ullam vero maiores! Quisquam ipsa sed fuga a. Itaque
+              tempora reiciendis, soluta minus repellat pariatur optio iusto.
+              Quos, consequuntur. Perferendis natus possimus sunt sapiente, ut
+              quis, minima ullam nihil velit, totam voluptatem aut accusantium
+              repudiandae rem soluta recusandae labore harum necessitatibus quam
+              eius laborum in deleniti? Perferendis deserunt consectetur aliquam
+              maiores tempora modi maxime a voluptate mollitia, nulla odit
+              temporibus totam eveniet adipisci ullam ipsam eius fugit in hic
+              corrupti provident. Expedita, saepe dolore provident itaque
+              numquam fugit beatae asperiores maiores hic cumque neque
+              excepturi. Maiores quisquam soluta itaque molestiae nihil expedita
+              velit magni enim deleniti quas? Magni natus debitis voluptatibus
+              eligendi minima vero soluta est, reiciendis inventore ipsam
+              temporibus aspernatur quaerat.
             </p>
             <h1 id="anuradhapura"><span>10.</span>Anuradhapura</h1>
             <div class="container text-center">
@@ -261,20 +465,29 @@
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem assumenda accusantium explicabo iusto eveniet neque
-              nulla aliquam. Illo reiciendis consequuntur in sit blanditiis modi
-              ipsum. Et atque asperiores qui minima est aperiam consequuntur
-              iusto earum, voluptatibus odio quas beatae. Reprehenderit
-              molestias sunt blanditiis porro ipsum voluptatum quisquam deleniti
-              impedit excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              vitae aliquid tenetur natus velit fugit tempore incidunt! Placeat,
+              nesciunt, accusantium nisi velit ad id alias dolore, repellat qui
+              ut pariatur corrupti aspernatur nulla. Praesentium aut incidunt
+              quia quisquam ullam vero maiores! Quisquam ipsa sed fuga a. Itaque
+              tempora reiciendis, soluta minus repellat pariatur optio iusto.
+              Quos, consequuntur. Perferendis natus possimus sunt sapiente, ut
+              quis, minima ullam nihil velit, totam voluptatem aut accusantium
+              repudiandae rem soluta recusandae labore harum necessitatibus quam
+              eius laborum in deleniti? Perferendis deserunt consectetur aliquam
+              maiores tempora modi maxime a voluptate mollitia, nulla odit
+              temporibus totam eveniet adipisci ullam ipsam eius fugit in hic
+              corrupti provident. Expedita, saepe dolore provident itaque
+              numquam fugit beatae asperiores maiores hic cumque neque
+              excepturi. Maiores quisquam soluta itaque molestiae nihil expedita
+              velit magni enim deleniti quas? Magni natus debitis voluptatibus
+              eligendi minima vero soluta est, reiciendis inventore ipsam
+              temporibus aspernatur quaerat.
             </p>
           </div>
         </div>
       </div>
     </section>
-
-    <button id="topBtn" onclick="topFunction()" title="To Top">Top</button>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
